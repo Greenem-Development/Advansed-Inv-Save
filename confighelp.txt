@@ -1,0 +1,38 @@
+This is description for main config file of the minecraft plugin "AdvansedInvSave"
+
+The config lines should look like this:
+   
+   something: false
+   other-thing: 1000
+   (... And so on)
+
+Available settings:
+
+   log-catched-errors
+   # Print errors and so on to console. Default: false
+   
+   enable-inv-menu
+   # Enables /inv command which can show gui of this plugin. If you really don't want it to exist, you can disable it here. Default: true
+   
+   enable-local-storage
+   # Allows players to open the local storage in gui (not really recommended for usual survival). Default: false
+   
+   enable-shared-storage
+   # Allows players to open the shared storage in gui (same, but files are in different folder and this can be synchronized beetween servers. Useful for building, for example) Default: false
+   
+   shared-storage-path
+   # To make shared storage work, enter the path for the folder for storing shared folders there. Default: null
+   
+   enable-whole-inventories
+   # Allows players to open "Whole inventories" in gui. Still in development, but later it will be able to save entire inventories and do some menagement. Default: false
+   
+   enable-wardrobe
+   # Allows players to open the wardrobe in gui (To save armor sets there. Still in development, but a bit closer to working state). Default: false
+   
+   enable-single-items
+   # Allows players to open "Items" in gui (To save individual items there with enchantments and etc. Btw, it works!). Default: false
+
+NOTE: Players CANNOT get any items from the gui and commands if they are not given the permission from console ("/permsinvadd" to give, "/permsinvremove" to remove, "/[later]" to give for using only once)
+Btw, if you want to know, what the gui can do, just enable it (and other gui parts) for some time to check (and give youself the permission).
+
+Tip: to reset a line in config (not this file) just delete it and type "/reloadadvinvsaveconfig" in chat or reload the entire plugin ("/reload" or "/reload confirm")

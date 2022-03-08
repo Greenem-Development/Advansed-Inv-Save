@@ -1,0 +1,22 @@
+name: AdvansedInvSave
+main: me.greenem.AdvansedInvSave.MainFileInv
+version: 1.0
+api-version: 1.18
+commands:
+   inv:
+      description: Main inv menu.
+      default: true
+   invsave:
+      default: true
+   invload:
+      default: true
+   permsinvadd:
+      permission: TestPlugin.basic
+   permsinvremove:
+      permission: TestPlugin.basic
+   permsinvoneload:
+      description: Permission for only one /invload (or via gui) usage. To cancel use /permsinvremove
+      permission: TestPlugin.basic
+   reloadadvinvsaveconfig:
+      description: Reload the config
+      permission: op
